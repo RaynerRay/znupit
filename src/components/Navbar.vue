@@ -4,13 +4,13 @@
     <v-app-bar app flat>
       <v-app-bar-nav-icon class="grey--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
       
-      <v-toolbar-title class="text-uppercase blue-grey--text">
-          <span class="font-weight-light">Znup</span>
+      <v-toolbar-title class="text-uppercase grey--text">
+          <span class="font-weight-bold">Znup</span>
           <span >it</span>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
-      <v-btn outlined class="white--text mx-1" color="deep-orange accent3">
+      <v-btn outlined class="blue--text mx-1" >
           <span>Post Request</span>
       </v-btn>
       

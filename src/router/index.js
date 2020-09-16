@@ -1,7 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import CompanyList from "../views/CompanyList.vue";
 
 Vue.use(VueRouter);
 
@@ -24,12 +23,16 @@ const routes = [
     path: "/services",
     name: "Services",
 
-    component: () => import("../views/Services.vue"),
+    component: () =>
+      import(/* webpackChunkName: "services" */ "../views/Services.vue"),
   },
   {
     path: "/services/:id",
-    name: "company-list",
-    component: CompanyList,
+    name: "company-detail",
+    component: () =>
+      import(
+        /* webpackChunkName: "companydetail" */ "../views/CompanyDetail.vue"
+      ),
     params: true,
   },
 ];

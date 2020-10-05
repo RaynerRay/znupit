@@ -1,6 +1,6 @@
 <template>
   <div class="ml-2 mr-2 home">
-    <v-img dark height="130" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
+    <!--<v-img dark height="130" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
      <v-row
       align="center"
       justify="center"
@@ -18,7 +18,7 @@
 
        </v-col>
      </v-row>
-    </v-img>
+    </v-img> -->
       
       <v-row>
         <v-col cols="12" sm="3">

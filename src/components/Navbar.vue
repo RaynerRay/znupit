@@ -1,6 +1,6 @@
 <template>
   
-  <v-card color="grey lighten-4">
+  <v-card class="navbar">
     <v-app-bar app flat>
       <v-app-bar-nav-icon class="grey--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
       
@@ -10,8 +10,12 @@
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
-      <v-btn outlined class="blue--text mx-1" >
-          <span>Post Request</span>
+      
+      <v-btn v-if="!loggedIn" outlined class="blue--text mx-1" >
+          <span>Login</span>
+      </v-btn>
+      <v-btn v-if="loggedIn" outlined class="blue--text mx-1" >
+          <span>Logout</span>
       </v-btn>
       
       
@@ -51,8 +55,16 @@ export default {
       ],
     };
   },
+  computed: {
+    loggedIn() {
+      return this.$store.getters.loggedIn;
+    },
+  },
 };
 </script>
 
 <style>
+.navbar {
+  background-color: #fcfcfc;
+}
 </style>

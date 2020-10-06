@@ -1,25 +1,6 @@
 <template>
 <div class="detail"> 
-      <v-img dark height="120" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
-     <v-row
-      align="center"
-      justify="center"
-    >
-      <v-col
-        class="text-center"
-        cols="12" sm="12" 
-      >
-        <p>.</p>
-        <h1 class="display-1 font-weight-thick mb-4 white--text">
-          Browse and connect with verified service providers.
-        </h1>
-        
-
-       </v-col>
-    </v-row>
-  </v-img>
-
-        
+    <v-container>
          <v-card
             class="mx-auto"
             max-width="1200"
@@ -246,7 +227,8 @@
 
       </v-tabs>
     </v-card>
-
+    
+  </v-container>
   <div v-for="photo in photos" :key="photo.id">
     {{photo.image}}
   </div>

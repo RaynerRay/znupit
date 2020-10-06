@@ -19,7 +19,7 @@
     </v-row>
   </v-img>
 
-        <v-container class="my-5 grey lighten-2" >
+        
          <v-card
             class="mx-auto"
             max-width="1200"
@@ -246,8 +246,7 @@
 
       </v-tabs>
     </v-card>
-    
-  </v-container>
+
   <div v-for="photo in photos" :key="photo.id">
     {{photo.image}}
   </div>

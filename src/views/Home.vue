@@ -26,7 +26,7 @@
           <h1 class="blue--text ml-8 font-weight-thin">Select A Category</h1>
           <v-overflow-btn
             v-model="selectedCategory"
-            class="my-2 ml-8"
+            class="my-2 ml-5"
             :items="categories"
             label="Select A Category "
             item-text="name"
